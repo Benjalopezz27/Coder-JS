@@ -1,0 +1,10 @@
+.inputCantidad {
+    border-radius: 5px;
+    margin-left: 4px;
+    
+    width: 40px;
+}
+.ProductLi{
+    display: flex;
+    justify-content:space-between;
+}

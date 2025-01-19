@@ -257,5 +257,113 @@
 //                                 <b>Precio: ${x.precio}</b>`
 //     document.body.appendChild(contenedor)
 //                             }
+// let boton = document.getElementById("boton")
 
 
+// function saludar(){
+//     let nombre=prompt("Ingrese su nombre")
+//     alert(`Bienvenido ${nombre}`)
+// }
+
+//CLASE 10 EVENTOS
+
+// boton.addEventListener("mouseout",saludar)
+// let inputField = document.getElementById("miCampoDeTexto")
+// inputField.addEventListener("change",function(event){
+//     console.log("El valor cambio a: "+event.target.value)
+// })
+// let miForm = document.getElementById("formulario")
+
+// miForm.addEventListener("submit",validarForm)
+
+// function validarForm(e){
+//     e.preventDefault()
+//     console.log("Form enviado")
+// }
+
+//CLASE 11 STORAGE Y JSON
+
+// localStorage.setItem(`bienvenida`,`bienvenidos a todos`)
+
+// function crearClave(){
+//     localStorage.setItem(`mi clave`,`coderhouse`)
+// }
+
+// crearClave()
+
+
+// const inputNombre = document.querySelector("#inputNombre");
+// const inputEdad = document.querySelector("#inputEdad");
+// const boton = document.querySelector("#boton");
+
+
+// function guardarForm (){
+//     localStorage.setItem('nombre', inputNombre.value)
+//     localStorage.setItem('edad', inputEdad.value)
+    
+// }
+
+// boton.addEventListener("click",guardarForm)
+
+// const producto1 ={
+//     id: 1,
+//     nombre: "Arroz"
+// }
+// const enJSON =JSON.stringify(producto1)
+
+// console.log(enJSON)
+// localStorage.setItem('producto1',enJSON)
+
+//CLASE 12 OPERADOS AVANZADOS I
+
+// let temp=30;
+// temp<30? alert("frio"):alert("calor");
+
+// const carrito = [];
+// carrito.lenght === 0 && console.log("Esta vacio");
+// let usuario = {
+//     nombre: "Juan",
+//     edad: 20,
+//     cursos: {
+//         javascript:"aprobado"
+//     }
+// }
+// console.log(usuario?.cursos?.javascript || "La propiedad no existe")
+
+// const {nombre, cursos:{javascript}} = usuario
+// console.log(nombre)
+
+// const desestructurar = (item) => {
+//     const {nombre,edad,cursos}=item
+//     console.log(nombre, edad, cursos)} 
+
+// desestructurar(usuario)
+
+//CLASE 13 OPERADORES AVANZADOS II Y WORKSHOPS
+
+// const nombres = ["juan","pedro","luis"]
+// const numeros = [1,5,6,74]
+// //console.log(...numeros)
+
+// const product = {
+//     name: "lechuga",
+//     price: 100,
+//     category: "verduleria"
+// }
+// const productos = {
+//     ...product,
+//     descuento: 20,
+//     price: 400
+// }
+// console.log(productos)
+
+// function sumar(numeros) {
+//      console.log(numeros.reduce((acc, n )=> acc+n, 0))
+// }
+// sumar(numeros)
+//CLASE 14 LIBRERIAS
+// Swal.fire({
+//     title:"prueba",
+//     text:"Hola Mundo",
+//     icon: "info"
+// });
